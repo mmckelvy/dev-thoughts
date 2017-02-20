@@ -35,7 +35,7 @@ export default class Form extends Component {
     return (
       <div>
         {/* Map over your input names, creating an Input component for each name. */}
-        {Object.keys(form).map((name, i) => {
+        {Object.keys(this.state).map((name, i) => {
           return <Input key={i} onChange={(e) => this.setState({[name]: e.target.value})} />
         })}
 
