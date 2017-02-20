@@ -3,6 +3,6 @@ A collection of bite-sized functions, patterns, and techniques to enhance your d
 
 ## General principles
 - Solve problems in the most direct way possible.
-- Avoid unnecessary abstractions.  When do do create abstractions, keep them specific.
+- Avoid unnecessary abstractions.  When you do create abstractions, keep them specific.
 
 
