@@ -10,6 +10,9 @@ function Input({ ...rest }) {
   )
 }
 
+/*
+Create a form component that own the state of all your inputs.
+*/
 export default class Form extends Component {
   constructor() {
     super()
@@ -19,38 +22,24 @@ export default class Form extends Component {
     track the latest input values.
     */
     this.state = {
-      form: {
-        email: '',
-        firstName: '',
-        lastName: '',
-        address: '',
-        phone: '',
-        // ...etc.
-      }
+      email: '',
+      firstName: '',
+      lastName: '',
+      address: '',
+      phone: '',
+      // ...etc.
     }
   }
 
-  saveData() {
-    const { form } = this.state // Will have all your updated form data
-
-    // Persist your data however you like...
-    fetch('/your-api', {
-      body: JSON.stringify(form)
-      // ...and so on
-    })
-  }
-
   render() {
-    const { form } = this.state
-
     return (
       <div>
-        {/* Map over your input names, creating an Input component for each one.*/}
+        {/* Map over your input names, creating an Input component for each name. */}
         {Object.keys(form).map((name, i) => {
           return <Input key={i} onChange={(e) => this.setState({[name]: e.target.value})} />
         })}
 
-        <button onClick={saveData}>submit</button>
+        <button onClick={someAjaxFn}>submit</button>
       </div>
     )
   }
