@@ -1,8 +1,6 @@
 # Dev gains
-A collection of bite-sized functions, patterns, and techniques to enhance your development game.
+A collection of bite-sized functions, patterns, and techniques I've found useful for various development tasks.  You might find them useful too.
 
-## General principles
-- Solve problems in the most direct way possible.
-- Avoid unnecessary abstractions.  When you do create abstractions, keep them specific.
+Items are organized by focus area (e.g. ui, Postgres, etc.).
 
-
+Enjoy.
