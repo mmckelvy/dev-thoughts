@@ -36,7 +36,7 @@ export default class Form extends Component {
       <div>
         {/* Map over your input names, creating an Input component for each name. */}
         {Object.keys(this.state).map((name, i) => {
-          return <Input key={i} onChange={(e) => this.setState({[name]: e.target.value})} />
+          return <Input key={i} value={this.state[name]} onChange={(e) => this.setState({[name]: e.target.value})} />
         })}
 
         <button onClick={someAjaxFn}>submit</button>
