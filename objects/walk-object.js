@@ -27,5 +27,7 @@ export default function walkObject(root, fn) {
       }
     })
   }
+
+  walk(root)
 }
 
