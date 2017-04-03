@@ -1,4 +1,4 @@
-# Dev gains
+# Dev thoughts
 A collection of bite-sized functions, patterns, and techniques I've found useful for various development tasks.  You might find them useful too.
 
 ## Usage
