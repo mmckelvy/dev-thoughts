@@ -38,6 +38,6 @@ export default function Col({ style, width, fill, mobileMediaQuery, ...rest }) {
 Col.propTypes = {
   style: PropTypes.object,
   width: PropTypes.string, // Should be a percentage
-  fill: PropTypes.bool, // Injected by Grid parent
   mobileMediaQuery: PropTypes.object, // Injected by Grid parent
+  fill: PropTypes.bool // Injected by Grid parent
 }

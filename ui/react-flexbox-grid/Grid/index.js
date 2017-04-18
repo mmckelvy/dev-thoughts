@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react'
 import Media from 'react-media'
 
-export default function Grid({ style, wrap, fill, mobileMediaQuery, children, ...rest }) {
+import { mediaQueries } from 'theme'
+
+export default function Grid({ style, wrap, fill, mobileMediaQuery = mediaQueries.isMobile, children, ...rest }) {
   return (
     <Media query={mobileMediaQuery}>
       {(isMobile) => {
@@ -26,7 +28,6 @@ export default function Grid({ style, wrap, fill, mobileMediaQuery, children, ..
 Grid.propTypes = {
   style: PropTypes.object,
   wrap: PropTypes.bool,
-  fill: PropTypes.bool,
   mobileMediaQuery: PropTypes.object, // Should be an object in the format understandable by json2mq
-  children: PropTypes.node,
+  children: PropTypes.node
 }
